@@ -27,8 +27,14 @@ h3 {
   font-weight: bold;
 }
 
+.hero {
+  background-image: url("/src/header-sunset.png");
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
 .navigation-links a {
-  margin: 20px;
+  margin: 20px 10px;
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;

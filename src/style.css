@@ -108,7 +108,15 @@ footer {
 }
 
 footer .contact-box {
-  background: var(--secondary-color);
+  background: linear-gradient(
+    90.5deg,
+    rgb(35, 210, 255) 0.3%,
+    rgb(74, 104, 247) 18.2%,
+    rgb(133, 80, 255) 36.4%,
+    rgb(198, 59, 243) 52.5%,
+    rgb(250, 84, 118) 68.8%,
+    rgb(255, 223, 67) 99.9%
+  );
   padding: 30px 120px;
   border-radius: 10px;
 }

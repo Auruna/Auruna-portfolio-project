@@ -27,6 +27,12 @@
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/e147466a51.js"
+      crossorigin="anonymous"
+    ></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lobster&family=PT+Mono&family=Pacifico&family=Roboto+Mono:wght@500&family=Roboto:ital,wght@0,100;1,900&family=Supermercado+One&display=swap" rel="stylesheet">
     <style>
       :root {
         --primary-color: #6c63ff;
@@ -41,6 +47,7 @@
       h3 {
         text-align: center;
         margin: 0;
+        font-family: 'Pacifico';
       }
 
       h2 {
@@ -68,6 +75,7 @@
         margin-block-end: 1em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
+      font-family: 'Supermercado One', cursive;
       }
 
       .homepage-link {
@@ -92,6 +100,49 @@
         font-size: 28px;
         text-decoration: underline;
       }
+
+      .active {
+        color: #c50d66 !important;
+      }
+      footer {
+  margin: 60px 0;
+}
+
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+footer .email-link:hover {
+color: #c50d66;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: #c50d66;
+  background: var(--branding-color);
+}
     </style>
   </head>
   <body>
@@ -113,7 +164,7 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a
-                class="nav-link active"
+                class="nav-link"
                 aria-current="page"
                 href="index.html"
                 title="Homepage"
@@ -123,7 +174,7 @@
 
             <li class="nav-item">
               <a
-                class="nav-link"
+                class="nav-link active"
                 href="about.html"
                 class="about-link"
                 title="About Auruna Haque"
@@ -182,14 +233,48 @@
         </div>
       </div>
     </div>
-    <div id="contact" class="mt-5">
-      <h2 class="text-center">📮 Contact me</h2>
+ <footer class="container">
+      <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+        <div>
+          <h3>Work inquiry</h3>
+          <p class="text-muted">Let's work together</p>
+        </div>
+      </div>
+      <div id="contact" class="mt-5">
+      <h2 class="d-flex justify-content-center mb-2">📮Contact me</h2>
       <a
         href="mailto:aurunahaque@gmail.com"
-        class="email-link"
+        class="email-link d-flex justify-content-center mb-5"
         title="Email aurunahaque@gmail.com"
         >aurunahaque@gmail.com</a
       >
+    </div>
+<div class="social-links d-flex justify-content-center">
+        <a
+          href="https://www.github.com/patricia"
+          target="_blank"
+          title="GitHub Profile"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.instragram.com/irun-uwalk"
+          target="_blank"
+          title="instragram Profile"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.tumblr.com/irun-uwalk"
+          target="_blank"
+          title="Tumblr Profile"
+        >
+       <i class="fa-brands fa-tumblr"></i>
+        </a>
+      </div>
+      
+    </footer>
+
     </div>
   </body>
 </html>

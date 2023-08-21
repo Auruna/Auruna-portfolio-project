@@ -151,3 +151,10 @@ footer .social-links a:hover {
   color: #c50d66;
   background: var(--branding-color);
 }
+
+@media (max-width: 320px) {
+  main {
+    display: flex;
+    grid-column: 2 / span 8;
+  }
+}

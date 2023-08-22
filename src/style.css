@@ -4,6 +4,30 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
 h2 {
   font-size: 48px;
 }
@@ -46,15 +70,34 @@ p {
   );
 }
 
+@keyframes hero-1 {
+  1% {
+    background-color: #d8f5fd;
+  }
+
+  25% {
+    background-color: #f2f0f2;
+  }
+
+  50% {
+    background-color: #f41aee;
+  }
+
+  75% {
+    background-color: #94474a;
+  }
+
+  100% {
+    background-color: #d8f5fd;
+  }
+}
+
 .hero {
-  background: linear-gradient(
-    89.9deg,
-    rgb(208, 246, 255) 0.1%,
-    rgb(255, 237, 237) 47.9%,
-    rgb(255, 255, 231) 100.2%
-  );
-  text-align: center;
   padding: 140px 10px;
+  animation-name: hero-1;
+  animation-duration: 10s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
 }
 
 .navigation-links a {
@@ -153,8 +196,16 @@ footer .social-links a:hover {
 }
 
 @media (max-width: 320px) {
+  hero {
+    display: grid;
+    font-size: smaller;
+    grid-column: 2 / span 12;
+  }
+
   main {
-    display: flex;
+    display: grid;
+    font-size: 1em;
     grid-column: 2 / span 8;
+    animation: fade-up 0.5s;
   }
 }

@@ -30,11 +30,13 @@
 
 h2 {
   font-size: 48px;
+  color: #343434;
 }
 
 h1 {
   font-size: 96px;
 }
+
 h1,
 h2,
 h3,
@@ -43,6 +45,7 @@ h4 {
   margin: 0;
   font-family: "Pacifico";
 }
+
 h3 {
   color: #565656;
   display: block;
@@ -52,6 +55,7 @@ h3 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
+  margin-bottom: 2px;
 }
 
 p {
@@ -156,21 +160,25 @@ footer .contact-box p {
   margin: 0;
 }
 
+footer h2 {
+  color: #32a9fc;
+}
+
 footer .email-link {
   text-decoration: none;
-  color: black;
+  color: #c50d66;
   font-size: 24px;
 }
 
 footer .email-link:hover {
-  color: #c50d66;
+  color: #32a9fc;
   transition: all 100ms ease-in-out;
 }
 
 footer .social-links a {
   margin: 0 20px;
   color: var(--branding-color);
-  background: var(--secondary-color);
+  background: var(--primary-color);
   padding: 10px 14px;
   border-radius: 50%;
   font-size: 18px;
@@ -194,7 +202,14 @@ footer .social-links a:hover {
     display: grid;
     font-size: 1em;
     grid-column: 2 / span 8;
-    animation: fade-up 0.5s;
+    /* animation: fade-up 0.5s; */
+  }
+}
+
+@media (max-width: 3200px) {
+  iframe {
+    display: grid;
+    grid-column: 1 / span 2;
   }
 }
 

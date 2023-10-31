@@ -16,6 +16,8 @@
       name="description"
       content="Information about Auruna Haque and how she got into SheCodes by coding projects from scratch"
     />
+    <link rel="stylesheet" href="/src/style.css">
+    <script src="app.js"></script>
     <title>About Me - Auruna Haque</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
@@ -34,140 +36,6 @@
     ></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lobster&family=PT+Mono&family=Pacifico&family=Roboto+Mono:wght@500&family=Roboto:ital,wght@0,100;1,900&family=Supermercado+One&display=swap" rel="stylesheet">
-    <style>
-      :root {
-        --primary-color: #6c63ff;
-        --secondary-color: #f5f2fe;
-        --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-      }
-      h1 {
-        font-size: 94px;
-      }
-      h1,
-      h2,
-      h3, h4 {
-        text-align: center;
-        margin: 0;
-        font-family: 'Pacifico';
-      }
-
-      h2 {
-        font-size: 48px;
-      }
-      h3 {
-        color: #565656;
-        display: block;
-        font-size: 2em;
-        margin-block-start: 0.67em;
-        margin-block-end: 0.67em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        font-weight: bold;
-      }
-
-      p {
-        background: var(--secondary-color);
-        padding: 20px;
-        border-radius: 4px;
-        font-size: 18px;
-        line-height: 1.5;
-        text-align: center;
-        display: block;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      }
-      
-      .cartoon-small {
-  max-height: 40px;
-}
-
-.bg {
- background: linear-gradient(to right, rgb(84, 51, 255), rgb(32, 189, 255), rgb(165, 254, 203));;
-}
-
-      .hero {
-  background: linear-gradient(
-    89.9deg,
-    rgb(208, 246, 255) 0.1%,
-    rgb(255, 237, 237) 47.9%,
-    rgb(255, 255, 231) 100.2%
-  );
-  text-align: center;
-  padding: 160px 10px;
-}
-
-      .homepage-link {
-        color: var(--primary-color);
-        text-align: center;
-        display: block;
-      }
-
-      .about-paragraphs p {
-        margin: 10px;
-      }
-      .about-paragraphs {
-        display: flex;
-        margin: 30px 0;
-        background: #f5f2fe;
-      }
-
-      .email-link {
-        display: flex;
-        justify-content: center;
-        color: var(--primary-color);
-        font-size: 28px;
-        text-decoration: underline;
-      }
-
-      .active {
-        color: #c50d66 !important;
-      }
-
-    
-      footer {
-  margin: 60px 0;
-}
-
-footer .contact-box {
-  background-image: url(src/purple-tree.jpg);
-  background-size: contain;
-  padding: 30px 120px;
-  border-radius: 10px;
-}
-
-footer .contact-box p {
-  margin: 0;
-}
-
-footer .email-link {
-  text-decoration: none;
-  color: black;
-  font-size: 24px;
-}
-
-footer .email-link:hover {
-color: #c50d66;
-  transition: all 100ms ease-in-out;
-}
-
-footer .social-links a {
-  margin: 0 20px;
-  color: var(--branding-color);
-  background: var(--secondary-color);
-  padding: 10px 14px;
-  border-radius: 50%;
-  font-size: 18px;
-  transition: all 100ms ease-in-out;
-}
-
-footer .social-links a:hover {
-  color: #c50d66;
-  background: var(--branding-color);
-}
-    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -239,10 +107,21 @@ footer .social-links a:hover {
     <h3>Coding student, based in the UK 🙋🏽‍♀️</h3>
     <h4 class="text-muted">Here's a little bit more about me and my creative work...👩🏽‍💻</h4>
 </div>
-  <h3>Introduction</h3>
+<div class="navigation-links">
+  <a
+   href="index.html#contact"
+   class="contact-link"
+   title="Contact Auruna Haque"
+   >Contact me</a>
+
+  <a href="cao.html" class="about-link" title="CAO"
+          >CAO</a>
+</div>
+
+<h3>Introduction</h3>
     <div class="about-paragraphs text-center">
       <p class>
-       I am someone who wants to expand her experience into the tech sector, with front-end and back-end development!
+       I am someone who wants to expand her experience into the tech sector, especially with front-end development!
        <br>
        My interests include art, designing and technology as well as education. <br> By learning to code, I hope to gain opportunities that marries creativity and technology together.
 <br>
@@ -349,7 +228,75 @@ footer .social-links a:hover {
     </div>
      <h3>Displays and Extracurricular Projects</h3>
      <p>Some photos showing my enthusiasm for displays as well as fun pictures of kids' work in Art Club 🎨</p>
-  <div class="container">
+  <div class="slider-container">
+      <div class="slide">
+        <div>
+          <img
+            src="src/bird-box.png"
+            class="bird-box-img"
+            alt="Embellished box with origami"
+            title="Embellished box with origami"
+          />
+        </div>
+        <h1>1</h1>
+      </div>
+      <div class="slide">
+        <div>
+          <img
+            src="src/hp-clay.png"
+            class="hp-clay-img"
+            alt="Using clay inspired by Harry Potter"
+            title="Using clay inspired by Harry Potter"
+          />/>
+        </div>
+        <h1>2</h1>
+      </div>
+      <div class="slide">
+        <div>
+          <img
+            src="src/glow-paper.png"
+            class="glow-paper-img"
+            alt="Etchings onto ink paper"
+            title="Etchings onto ink paper"
+          />
+        </div>
+        <h1>3</h1>
+      </div>
+      <div class="slide">
+        <div>
+          <img
+            src="src/glow-2.png"
+            class="glow-2-img"
+            alt="More etchings"
+            title="More etchings"
+          />
+        </div>
+        <h1>4</h1>
+      </div>
+      <div class="slide">
+        <div>
+          <img
+            src="src/tie-dye.png"
+            class="tie-dye-img"
+            alt="Tie Dye"
+            title="Tie Dye"
+          />
+          <h4>Tie Dye Fabrics</h4>
+        </div>
+        <h1>5</h1>
+      </div>
+    </div>
+    <div>
+      <button type="button" class="prevBtn">Prev</button>
+      <button type="button" class="nextBtn">Next</button>
+    </div>
+  
+  
+  
+  
+  
+  
+     <!-- <div class="container">
      <div class="row">
         <div class="col-sm-4">
           <img
@@ -512,7 +459,9 @@ footer .social-links a:hover {
         </div>
       </div>
  </div>
-     <footer class="container">
+ -->
+
+<footer class="container">
       <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
         <div>
           <h3>Work inquiry</h3>
@@ -555,6 +504,6 @@ footer .social-links a:hover {
     </footer>
 
     </div>
-    </div>
+    </div> 
   </body>
 </html>

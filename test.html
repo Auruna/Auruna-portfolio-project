@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .hero-box {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        max-width: 1140px;
+        margin: 0 auto;
+      }
+
+      .header {
+        width: 100%;
+        height: 768px;
+        background-color: #c50d66;
+      }
+
+      .layer {
+        background-color: purple;
+        height: 650px;
+        border-bottom-right-radius: 100px;
+        padding-top: 40px;
+      }
+
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+      }
+
+      .nav .logo {
+        color: whitesmoke;
+      }
+
+      .nav .nav-menu a {
+        text-decoration: none;
+        color: whitesmoke;
+        padding: 10px 20px;
+        background-color: black;
+        border-bottom-right-radius: 10px;
+        margin-left: 20px;
+      }
+
+      .nav .nav-menu a:hover {
+        color: yellow;
+        border: 1px solid #fff;
+      }
+
+      .hero-box {
+        display: flex;
+        padding-top: 150px;
+        color: #fff;
+      }
+
+      .hero-box .left-side h2 {
+        width: 50%;
+        padding: 20px;
+      }
+
+      .hero-box .left-side h4 {
+        font-size: 20px;
+        text-transform: uppercase;
+        line-height: 2;
+      }
+
+      .hero-box .left-side p {
+        margin-bottom: 30px;
+      }
+
+      .hero-box .left-side a {
+        background-color: aquamarine;
+        padding: 15px 30px;
+        border-bottom-right-radius: 10px;
+        color: #fff;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .hero-box .left-side a:hover {
+        background-color: #fff;
+        color: #c50d66;
+        transition: 0.2s;
+        text-decoration: none;
+      }
+
+      /* Right Side */
+      .hero-box .right-side {
+        width: 50%;
+      }
+
+      .hero-box .right-side .image-box {
+        width: 350px;
+        height: 350px;
+        border: 5px solid #c50d66;
+        margin: auto;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        position: relative;
+        animation: slide 0.8s ease-in;
+        animation-delay: 2s;
+      }
+
+      .hero-box .right-side .image-box::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border: 5px solid #fff;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        animation: slide 0.8s ease-in;
+        animation-delay: 1s;
+      }
+
+      .hero-box .right-side .image-box .profile-image {
+        background-image: url("/src/west-croydon.PNG");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        animation: slide 0.8s ease-in;
+        animation-delay: 1s;
+      }
+
+      /* Animation -  https://www.youtube.com/watch?v=0EehFY9peVE */
+      @keyframes slide {
+        0% {
+          transform: tranlsateX(500px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+    </style>
+    <div class="header">
+      <div class="layer">
+        <div class="container">
+          <div class="nav">
+            <div class="logo">LOGO</div>
+            <div class="nav-menu"></div>
+            <a href="#">Work</a>
+            <a href="#">Resume</a>
+          </div>
+        </div>
+        <div class="hero-box">
+          <div class="left-side">
+            <h2>Front-end developer</h2>
+            <h4>Check out my latest projects</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              libero nihil.
+            </p>
+            <a href="#">Hire Me</a>
+          </div>
+          <div class="right-side">
+            <div class="image-box">
+              <div class="profile-image">image</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -205,6 +205,14 @@ footer .social-links a:hover {
     grid-column: 2 / span 8;
     /* animation: fade-up 0.5s; */
   }
+
+  iframe {
+    margin-bottom: 20px;
+    display: grid;
+    font-size: 1em;
+    grid-column: 2 / span 8;
+    /* animation: fade-up 0.5s; */
+  }
 }
 
 @media (max-width: 3200px) {

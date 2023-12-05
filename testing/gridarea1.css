@@ -1,0 +1,40 @@
+.container {
+  background-color: aquamarine;
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  /* grid-template-rows: 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr; */
+}
+
+/* .item-1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 5;
+} */
+
+.item-1 {
+  background-color: antiquewhite;
+  grid-row: 2 / 5; /* first value is the starting line, second is the ending line */
+  grid-column: 1 / 5;
+  z-index: 1; /*this comes in fron like in powerpoint's 'bring to front'*/
+  border-bottom-right-radius: 70px;
+}
+
+.item-2 {
+  background-color: greenyellow;
+  grid-row: span 2; /* wherever it currently is, span that many times */
+  grid-column: span 2;
+}
+
+.item-3 {
+  background-color: blueviolet;
+  grid-area: 3/1/7/7; /* row-start col-start row-end col-end; */
+  /* also the same as grid-area: 3/1/-1/-1; */
+}
+
+.item-4 {
+  background-color: pink;
+  grid-area: 3/4/5/6;
+}

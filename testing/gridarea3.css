@@ -1,0 +1,26 @@
+.container {
+  background-color: aquamarine;
+  display: grid;
+  height: 600px;
+  grid-template-rows: repeat(2, 100px);
+  grid-template-columns: repeat(2, 100px);
+  justify-items: space-evenly;
+  align-items: space-evenly;
+  /* ^^ these have a default value of stretch */
+}
+
+.item-1 {
+  background-color: aliceblue;
+}
+
+.item-2 {
+  background-color: pink;
+}
+
+.item-3 {
+  background-color: blueviolet;
+}
+
+.item-4 {
+  background-color: brown;
+}

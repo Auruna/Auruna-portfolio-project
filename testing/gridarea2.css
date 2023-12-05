@@ -1,0 +1,29 @@
+.container {
+  background-color: aquamarine;
+  display: grid;
+  grid-template-rows: 100px 200px 100px;
+  /* takes 2 arguments: how many rows, how big the rows are) */
+  grid-template-columns: 1fr 3fr;
+  /* can mix values like above 
+  minmax = minimum value, then maximum value*/
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+}
+
+.item-1 {
+  grid-area: header;
+}
+
+.item-2 {
+  grid-area: main;
+}
+
+.item-3 {
+  grid-area: aside;
+}
+
+.item-4 {
+  grid-area: footer;
+}
